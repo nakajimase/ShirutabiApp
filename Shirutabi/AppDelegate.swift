@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Shirutabi
-//
-//  Created by 中嶋聖也 on 2018/11/11.
-//  Copyright © 2018 Seiya Nakajima. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
