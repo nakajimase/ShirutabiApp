@@ -13,31 +13,31 @@
         <scene sceneID="03u-CC-xVi">
             <objects>
                 <viewControllerPlaceholder storyboardName="Home" id="IFX-Bm-73t" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Tlp-OR-TQ3"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="Tlp-OR-TQ3"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uWZ-eK-A84" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-454" y="-541"/>
+            <point key="canvasLocation" x="-557" y="-433"/>
         </scene>
         <!--SearchViewController-->
         <scene sceneID="7QN-FC-UnR">
             <objects>
                 <viewControllerPlaceholder storyboardName="SearchViewController" id="gYm-P6-ryF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="K9B-qj-qfp"/>
+                    <tabBarItem key="tabBarItem" title="Search" id="K9B-qj-qfp"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Qm-Lj-sOb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-452" y="-284"/>
+            <point key="canvasLocation" x="-482" y="-297"/>
         </scene>
         <!--MyPageViewController-->
         <scene sceneID="YDs-R0-Aq4">
             <objects>
                 <viewControllerPlaceholder storyboardName="MyPageViewController" id="vos-pB-bH9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="IZr-UL-Ggm"/>
+                    <tabBarItem key="tabBarItem" title="MyPage" id="IZr-UL-Ggm"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BXK-gc-cGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-456" y="-110"/>
+            <point key="canvasLocation" x="-477" y="-174"/>
         </scene>
         <!--Main Tab Controller-->
         <scene sceneID="NH2-S5-go2">

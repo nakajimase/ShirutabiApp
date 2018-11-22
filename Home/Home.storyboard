@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="dna-En-EyO">
             <objects>
                 <viewController id="gD4-1u-SBQ" customClass="HomeViewController" customModule="Shirutabi" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,6 +20,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6J0-4T-RaL"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="kgX-T6-pCn"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xPX-kp-2Yf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

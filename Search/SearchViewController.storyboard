@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search View Controller-->
+        <!--Search-->
         <scene sceneID="xcY-su-gJR">
             <objects>
                 <viewController id="QOp-Io-l7s" customClass="SearchViewController" customModule="Shirutabi" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,6 +20,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pUS-3H-fyy"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Search" id="Kog-X3-CAN"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aIZ-gZ-xRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
