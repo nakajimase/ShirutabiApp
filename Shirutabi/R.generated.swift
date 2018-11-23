@@ -130,7 +130,9 @@ struct _R {
   }
   
   struct storyboard {
-    struct contentsTopTableViewController: Rswift.StoryboardResourceType {
+    struct contentsTopTableViewController: Rswift.StoryboardResourceWithInitialControllerType {
+      typealias InitialController = ContentsTopTableViewController
+      
       let bundle = R.hostingBundle
       let name = "ContentsTopTableViewController"
       

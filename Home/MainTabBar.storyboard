@@ -9,15 +9,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--ContentsTopTableViewController-->
         <scene sceneID="03u-CC-xVi">
             <objects>
-                <viewControllerPlaceholder storyboardName="Home" id="IFX-Bm-73t" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="ContentsTopTableViewController" id="IFX-Bm-73t" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" id="Tlp-OR-TQ3"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uWZ-eK-A84" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-557" y="-433"/>
+            <point key="canvasLocation" x="-430" y="-433"/>
         </scene>
         <!--SearchViewController-->
         <scene sceneID="7QN-FC-UnR">
