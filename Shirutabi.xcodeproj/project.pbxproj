@@ -17,6 +17,8 @@
 		B431372421A6DF7400DDD647 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B431372321A6DF7400DDD647 /* SearchViewController.storyboard */; };
 		B431372721A6DFD600DDD647 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B431372621A6DFD600DDD647 /* MyPageViewController.swift */; };
 		B431372921A6DFEB00DDD647 /* MyPageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B431372821A6DFEB00DDD647 /* MyPageViewController.storyboard */; };
+		B431373221A81FE100DDD647 /* ContentsTopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B431373121A81FE100DDD647 /* ContentsTopTableViewController.swift */; };
+		B431373421A81FFD00DDD647 /* ContentsTopTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B431373321A81FFD00DDD647 /* ContentsTopTableViewController.storyboard */; };
 		B4BB824C21972EAD0048DE89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BB824B21972EAD0048DE89 /* AppDelegate.swift */; };
 		B4BB825321972EAF0048DE89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4BB825221972EAF0048DE89 /* Assets.xcassets */; };
 		B4BB825621972EAF0048DE89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4BB825421972EAF0048DE89 /* LaunchScreen.storyboard */; };
@@ -37,6 +39,8 @@
 		B431372321A6DF7400DDD647 /* SearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
 		B431372621A6DFD600DDD647 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		B431372821A6DFEB00DDD647 /* MyPageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPageViewController.storyboard; sourceTree = "<group>"; };
+		B431373121A81FE100DDD647 /* ContentsTopTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsTopTableViewController.swift; sourceTree = "<group>"; };
+		B431373321A81FFD00DDD647 /* ContentsTopTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContentsTopTableViewController.storyboard; sourceTree = "<group>"; };
 		B4BB824821972EAD0048DE89 /* Shirutabi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shirutabi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4BB824B21972EAD0048DE89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4BB825221972EAF0048DE89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				B431370221A6D0FA00DDD647 /* Home */,
+				B431372C21A81EF200DDD647 /* Contents */,
 				B431371E21A6DEDE00DDD647 /* Search */,
 				B431372521A6DFAB00DDD647 /* MyPage */,
 			);
@@ -119,6 +124,15 @@
 				B431372821A6DFEB00DDD647 /* MyPageViewController.storyboard */,
 			);
 			path = MyPage;
+			sourceTree = "<group>";
+		};
+		B431372C21A81EF200DDD647 /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				B431373121A81FE100DDD647 /* ContentsTopTableViewController.swift */,
+				B431373321A81FFD00DDD647 /* ContentsTopTableViewController.storyboard */,
+			);
+			path = Contents;
 			sourceTree = "<group>";
 		};
 		B4BB823F21972EAD0048DE89 = {
@@ -229,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B431373421A81FFD00DDD647 /* ContentsTopTableViewController.storyboard in Resources */,
 				B431372921A6DFEB00DDD647 /* MyPageViewController.storyboard in Resources */,
 				B4BB825621972EAF0048DE89 /* LaunchScreen.storyboard in Resources */,
 				B431371921A6DC5F00DDD647 /* MainNavigation.storyboard in Resources */,
@@ -296,6 +311,7 @@
 				B431372021A6DF3400DDD647 /* SearchViewController.swift in Sources */,
 				B431371B21A6DD5600DDD647 /* HomeViewController.swift in Sources */,
 				B431372721A6DFD600DDD647 /* MyPageViewController.swift in Sources */,
+				B431373221A81FE100DDD647 /* ContentsTopTableViewController.swift in Sources */,
 				B4BB824C21972EAD0048DE89 /* AppDelegate.swift in Sources */,
 				B431370921A6D1EF00DDD647 /* MainNavigationController.swift in Sources */,
 				B431370521A6D1C800DDD647 /* MainTabController.swift in Sources */,
