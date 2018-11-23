@@ -36,13 +36,24 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 0 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
   struct nib {
+    /// Nib `ContentsTopListCell`.
+    static let contentsTopListCell = _R.nib._ContentsTopListCell()
+    
+    /// `UINib(name: "ContentsTopListCell", in: bundle)`
+    static func contentsTopListCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.contentsTopListCell)
+    }
+    
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 0 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
   struct reuseIdentifier {
+    /// Reuse identifier `contentsTopListCell`.
+    static let contentsTopListCell: Rswift.ReuseIdentifier<ContentsTopListCell> = Rswift.ReuseIdentifier(identifier: "contentsTopListCell")
+    
     fileprivate init() {}
   }
   
@@ -126,6 +137,20 @@ struct R: Rswift.Validatable {
 
 struct _R {
   struct nib {
+    struct _ContentsTopListCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = ContentsTopListCell
+      
+      let bundle = R.hostingBundle
+      let identifier = "contentsTopListCell"
+      let name = "ContentsTopListCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> ContentsTopListCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ContentsTopListCell
+      }
+      
+      fileprivate init() {}
+    }
+    
     fileprivate init() {}
   }
   

@@ -1,22 +1,24 @@
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ContentsTopTableViewController: UITableViewController {
+
+    private var cells: [ContentsTopTableViewModel.Cell] = []
+
+    private let viewModel = ContentsTopListCell()
+    private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        tableView.register(R.nib.contentsTopListCell)
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return cells.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
