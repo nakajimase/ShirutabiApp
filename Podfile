@@ -11,6 +11,7 @@ def common_pods
   pod 'SVProgressHUD'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'Alamofire', '~> 4.5'
+  pod 'R.swift'
 end
 
 target 'Shirutabi' do
