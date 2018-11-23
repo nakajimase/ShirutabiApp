@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B431373721A8267C00DDD647 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B431373621A8267C00DDD647 /* R.generated.swift */; };
 		B4BB824C21972EAD0048DE89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BB824B21972EAD0048DE89 /* AppDelegate.swift */; };
 		B4BB824E21972EAD0048DE89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BB824D21972EAD0048DE89 /* ViewController.swift */; };
 		B4BB825121972EAD0048DE89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4BB824F21972EAD0048DE89 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		20BE1B97AFBC78E078CF3AD3 /* Pods-Shirutabi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shirutabi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shirutabi/Pods-Shirutabi.debug.xcconfig"; sourceTree = "<group>"; };
 		323BFB2CDCDE1595D53F3F33 /* Pods_Shirutabi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shirutabi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5460DB2B5E52C75C5989FE46 /* Pods-Shirutabi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shirutabi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shirutabi/Pods-Shirutabi.release.xcconfig"; sourceTree = "<group>"; };
+		B431373621A8267C00DDD647 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		B4BB824821972EAD0048DE89 /* Shirutabi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shirutabi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4BB824B21972EAD0048DE89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4BB824D21972EAD0048DE89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				B4BB824F21972EAD0048DE89 /* Main.storyboard */,
 				B4BB825221972EAF0048DE89 /* Assets.xcassets */,
 				B4BB825421972EAF0048DE89 /* LaunchScreen.storyboard */,
+				B431373621A8267C00DDD647 /* R.generated.swift */,
 				B4BB825721972EAF0048DE89 /* Info.plist */,
 			);
 			path = Shirutabi;
@@ -95,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4BB825A21972EAF0048DE89 /* Build configuration list for PBXNativeTarget "Shirutabi" */;
 			buildPhases = (
+				B431373521A8253100DDD647 /* ShellScript */,
 				821A6D6DA4B95754C73EC3F1 /* [CP] Check Pods Manifest.lock */,
 				B4BB824421972EAD0048DE89 /* Sources */,
 				B4BB824521972EAD0048DE89 /* Frameworks */,
@@ -175,6 +179,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B431373521A8253100DDD647 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Shirutabi\"\n";
+		};
 		F97462F27C5DAE30FF6AFC47 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -183,6 +204,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Shirutabi/Pods-Shirutabi-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
@@ -191,6 +213,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
@@ -210,6 +233,7 @@
 			files = (
 				B4BB824E21972EAD0048DE89 /* ViewController.swift in Sources */,
 				B4BB824C21972EAD0048DE89 /* AppDelegate.swift in Sources */,
+				B431373721A8267C00DDD647 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
