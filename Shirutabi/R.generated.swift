@@ -36,23 +36,32 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
   struct nib {
-    /// Nib `ContentsTopListCell`.
-    static let contentsTopListCell = _R.nib._ContentsTopListCell()
+    /// Nib `ContentsListCell`.
+    static let contentsListCell = _R.nib._ContentsListCell()
+    /// Nib `TopBannerCell`.
+    static let topBannerCell = _R.nib._TopBannerCell()
     
-    /// `UINib(name: "ContentsTopListCell", in: bundle)`
-    static func contentsTopListCell(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.contentsTopListCell)
+    /// `UINib(name: "ContentsListCell", in: bundle)`
+    static func contentsListCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.contentsListCell)
+    }
+    
+    /// `UINib(name: "TopBannerCell", in: bundle)`
+    static func topBannerCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.topBannerCell)
     }
     
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
   struct reuseIdentifier {
-    /// Reuse identifier `contentsTopListCell`.
-    static let contentsTopListCell: Rswift.ReuseIdentifier<ContentsTopListCell> = Rswift.ReuseIdentifier(identifier: "contentsTopListCell")
+    /// Reuse identifier `ContentsListCell`.
+    static let contentsListCell: Rswift.ReuseIdentifier<ContentsListCell> = Rswift.ReuseIdentifier(identifier: "ContentsListCell")
+    /// Reuse identifier `TopBannerCell`.
+    static let topBannerCell: Rswift.ReuseIdentifier<TopBannerCell> = Rswift.ReuseIdentifier(identifier: "TopBannerCell")
     
     fileprivate init() {}
   }
@@ -137,15 +146,29 @@ struct R: Rswift.Validatable {
 
 struct _R {
   struct nib {
-    struct _ContentsTopListCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
-      typealias ReusableType = ContentsTopListCell
+    struct _ContentsListCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = ContentsListCell
       
       let bundle = R.hostingBundle
-      let identifier = "contentsTopListCell"
-      let name = "ContentsTopListCell"
+      let identifier = "ContentsListCell"
+      let name = "ContentsListCell"
       
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> ContentsTopListCell? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ContentsTopListCell
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> ContentsListCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ContentsListCell
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _TopBannerCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = TopBannerCell
+      
+      let bundle = R.hostingBundle
+      let identifier = "TopBannerCell"
+      let name = "TopBannerCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> TopBannerCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? TopBannerCell
       }
       
       fileprivate init() {}

@@ -1,6 +1,6 @@
 import UIKit
 
-class ContentsTopListCell: UITableViewCell {
+class TopBannerCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -3,11 +3,23 @@ import RxSwift
 
 class ContentsTopTableViewModel {
 
-    enum Cell {
-        case topBanner
-        case topContents
-        case contents
-        case advertisement
+    enum Section {
+        case topBannerCell
+        case contentsCell
     }
+
+    var sections: [Section] = [
+        .topBannerCell,
+        .contentsCell
+    ]
+
+    enum Cell {
+        case topBannerCell
+        case topContentsCell
+        case contentsCell
+        case advertisementCell
+    }
+
+    private(set) var elements = [Cell]()
     
 }
