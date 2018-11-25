@@ -29,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="-482" y="-297"/>
         </scene>
-        <!--MyPageViewController-->
+        <!--MyPageTableViewController-->
         <scene sceneID="YDs-R0-Aq4">
             <objects>
-                <viewControllerPlaceholder storyboardName="MyPageViewController" id="vos-pB-bH9" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="MyPageTableViewController" id="vos-pB-bH9" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="MyPage" id="IZr-UL-Ggm"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BXK-gc-cGF" userLabel="First Responder" sceneMemberID="firstResponder"/>

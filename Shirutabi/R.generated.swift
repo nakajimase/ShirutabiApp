@@ -83,8 +83,8 @@ struct R: Rswift.Validatable {
     static let mainNavigation = _R.storyboard.mainNavigation()
     /// Storyboard `MainTabBar`.
     static let mainTabBar = _R.storyboard.mainTabBar()
-    /// Storyboard `MyPageViewController`.
-    static let myPageViewController = _R.storyboard.myPageViewController()
+    /// Storyboard `MyPageTableViewController`.
+    static let myPageTableViewController = _R.storyboard.myPageTableViewController()
     /// Storyboard `SearchViewController`.
     static let searchViewController = _R.storyboard.searchViewController()
     
@@ -113,9 +113,9 @@ struct R: Rswift.Validatable {
       return UIKit.UIStoryboard(resource: R.storyboard.mainTabBar)
     }
     
-    /// `UIStoryboard(name: "MyPageViewController", bundle: ...)`
-    static func myPageViewController(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.myPageViewController)
+    /// `UIStoryboard(name: "MyPageTableViewController", bundle: ...)`
+    static func myPageTableViewController(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.myPageTableViewController)
     }
     
     /// `UIStoryboard(name: "SearchViewController", bundle: ...)`
@@ -223,11 +223,11 @@ struct _R {
       fileprivate init() {}
     }
     
-    struct myPageViewController: Rswift.StoryboardResourceWithInitialControllerType {
-      typealias InitialController = MyPageViewController
+    struct myPageTableViewController: Rswift.StoryboardResourceWithInitialControllerType {
+      typealias InitialController = MyPageTableViewController
       
       let bundle = R.hostingBundle
-      let name = "MyPageViewController"
+      let name = "MyPageTableViewController"
       
       fileprivate init() {}
     }
