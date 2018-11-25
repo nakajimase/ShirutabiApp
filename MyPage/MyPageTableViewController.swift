@@ -12,37 +12,43 @@ class MyPageTableViewController: UITableViewController {
         super.init(coder: aDecoder)
     }
 
+    private let viewModel = MyaPageTableViewModel()
+    private let disposeBag = DisposeBag()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        tableView.register(R.nib.profileHeaderCell)
+        tableView.register(R.nib.favoriteTabCell)
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        tableView.rowHeight = UITableView.automaticDimension
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return viewModel.sections.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        switch viewModel.sections[section] {
+        case .profileHeaderCell:
+            return 1
+        case .favoriteTabCell:
+            return 1
+        }
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        switch viewModel.sections[indexPath.section] {
+        case .profileHeaderCell:
+            let cell = tableView.dequeueReusableCell(withIdentifier: R.nib.profileHeaderCell, for: indexPath)
+            return cell ?? UITableViewCell()
+        case .favoriteTabCell:
+            let cell = tableView.dequeueReusableCell(withIdentifier: R.nib.favoriteTabCell, for: indexPath)
+            return cell ?? UITableViewCell()
+        }
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

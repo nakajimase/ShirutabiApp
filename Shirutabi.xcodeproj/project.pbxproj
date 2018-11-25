@@ -26,6 +26,10 @@
 		B431375021AA6EC400DDD647 /* MyPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B431374F21AA6EC400DDD647 /* MyPageTableViewController.swift */; };
 		B431375221AA6ED800DDD647 /* MyPageTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B431375121AA6ED800DDD647 /* MyPageTableViewController.storyboard */; };
 		B431375521AA707100DDD647 /* MyPageTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B431375421AA707100DDD647 /* MyPageTableViewModel.swift */; };
+		B431375F21AA794200DDD647 /* ProfileHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B431375D21AA794200DDD647 /* ProfileHeaderCell.swift */; };
+		B431376021AA794200DDD647 /* ProfileHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B431375E21AA794200DDD647 /* ProfileHeaderCell.xib */; };
+		B431376321AA796A00DDD647 /* FavoriteTabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B431376121AA796A00DDD647 /* FavoriteTabCell.swift */; };
+		B431376421AA796A00DDD647 /* FavoriteTabCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B431376221AA796A00DDD647 /* FavoriteTabCell.xib */; };
 		B4BB824C21972EAD0048DE89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BB824B21972EAD0048DE89 /* AppDelegate.swift */; };
 		B4BB825321972EAF0048DE89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4BB825221972EAF0048DE89 /* Assets.xcassets */; };
 		B4BB825621972EAF0048DE89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4BB825421972EAF0048DE89 /* LaunchScreen.storyboard */; };
@@ -55,6 +59,10 @@
 		B431374F21AA6EC400DDD647 /* MyPageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTableViewController.swift; sourceTree = "<group>"; };
 		B431375121AA6ED800DDD647 /* MyPageTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPageTableViewController.storyboard; sourceTree = "<group>"; };
 		B431375421AA707100DDD647 /* MyPageTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTableViewModel.swift; sourceTree = "<group>"; };
+		B431375D21AA794200DDD647 /* ProfileHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderCell.swift; sourceTree = "<group>"; };
+		B431375E21AA794200DDD647 /* ProfileHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeaderCell.xib; sourceTree = "<group>"; };
+		B431376121AA796A00DDD647 /* FavoriteTabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTabCell.swift; sourceTree = "<group>"; };
+		B431376221AA796A00DDD647 /* FavoriteTabCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTabCell.xib; sourceTree = "<group>"; };
 		B4BB824821972EAD0048DE89 /* Shirutabi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shirutabi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4BB824B21972EAD0048DE89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4BB825221972EAF0048DE89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -185,6 +193,10 @@
 		B431375621AA70C300DDD647 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				B431375D21AA794200DDD647 /* ProfileHeaderCell.swift */,
+				B431375E21AA794200DDD647 /* ProfileHeaderCell.xib */,
+				B431376121AA796A00DDD647 /* FavoriteTabCell.swift */,
+				B431376221AA796A00DDD647 /* FavoriteTabCell.xib */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -320,6 +332,8 @@
 				B431371721A6DC4700DDD647 /* MainTabBar.storyboard in Resources */,
 				B431374A21A96E2900DDD647 /* TopBannerCell.xib in Resources */,
 				B431372421A6DF7400DDD647 /* SearchViewController.storyboard in Resources */,
+				B431376421AA796A00DDD647 /* FavoriteTabCell.xib in Resources */,
+				B431376021AA794200DDD647 /* ProfileHeaderCell.xib in Resources */,
 				B431371D21A6DD6D00DDD647 /* Home.storyboard in Resources */,
 				B4BB825321972EAF0048DE89 /* Assets.xcassets in Resources */,
 				B431374E21A96E5400DDD647 /* ContentsListCell.xib in Resources */,
@@ -405,12 +419,14 @@
 				B431373A21A82A4300DDD647 /* R.generated.swift in Sources */,
 				B431374221A8413300DDD647 /* ContentsTopTableViewModel.swift in Sources */,
 				B431373221A81FE100DDD647 /* ContentsTopTableViewController.swift in Sources */,
+				B431375F21AA794200DDD647 /* ProfileHeaderCell.swift in Sources */,
 				B4BB824C21972EAD0048DE89 /* AppDelegate.swift in Sources */,
 				B431375021AA6EC400DDD647 /* MyPageTableViewController.swift in Sources */,
 				B431375521AA707100DDD647 /* MyPageTableViewModel.swift in Sources */,
 				B431370921A6D1EF00DDD647 /* MainNavigationController.swift in Sources */,
 				B431370521A6D1C800DDD647 /* MainTabController.swift in Sources */,
 				B431374D21A96E5400DDD647 /* ContentsListCell.swift in Sources */,
+				B431376321AA796A00DDD647 /* FavoriteTabCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
