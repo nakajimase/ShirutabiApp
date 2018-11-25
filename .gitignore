@@ -17,6 +17,9 @@ DerivedData
 *.xcuserstate
 xcschememanagement.plist
 
+## R
+*.generated.swift
+
 # others
 *.swp
 !.gitkeep

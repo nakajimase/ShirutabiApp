@@ -1,38 +1,55 @@
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ContentsTopTableViewController: UITableViewController {
+
+    private init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+
+    private let viewModel = ContentsTopTableViewModel()
+    private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        tableView.register(R.nib.topBannerCell)
+        tableView.register(R.nib.contentsListCell)
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 44
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return viewModel.sections.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        switch viewModel.sections[section] {
+        case .topBannerCell:
+            return 1
+        case .contentsCell:
+            return viewModel.elements.count
+        }
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        switch viewModel.sections[indexPath.section] {
+        case .topBannerCell:
+            let cell = tableView.dequeueReusableCell(withIdentifier: R.nib.topBannerCell, for: indexPath)
+            return cell ?? UITableViewCell()
+        case .contentsCell:
+            let cell = tableView.dequeueReusableCell(withIdentifier: R.nib.contentsListCell, for: indexPath)
+            return cell ?? UITableViewCell()
+        }
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
